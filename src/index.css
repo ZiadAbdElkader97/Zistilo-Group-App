@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    font-family: "Kanit", serif;
+    border-style: none;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-weight: 400;
+  }
+  a {
+    text-decoration: none;
+    transition: all 0.3s ease-out;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  li {
+    margin-bottom: 10px;
+  }
+  p {
+    color: #838694;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Kanit", serif;
+    line-height: 30px !important;
+    margin-bottom: 16px;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    transition: all 0.3s ease-out;
+  }
+  button {
+    cursor: pointer;
+  }
+  hr {
+    padding: 0;
+    margin: 30px 0 30px 0;
+    border: 1px solid #eceff8;
+  }
+  label {
+    color: #7e7e7e;
+    font-weight: 400;
+    font-size: 14px;
+    cursor: pointer;
+  }
+}
