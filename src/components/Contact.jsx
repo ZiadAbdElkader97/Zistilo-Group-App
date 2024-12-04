@@ -29,7 +29,7 @@ const Contact = () => {
               data-aos="fade-right"
               data-aos-duration="200"
             >
-              <ul className="contant-info-content-wrape mt-[30px]">
+              <ul className="contant-info-content -wrape mt-[30px]">
                 {ContactData.ContactList.map((item, i) => (
                   <li
                     className="flex items-center magic-hover magic-hover__square p-[15px] m-0 border-[1px] border-solid border-[#e1e1e1] transition-all duration-[0.3s] sm:!block"
@@ -41,10 +41,10 @@ const Contact = () => {
                         dangerouslySetInnerHTML={{ __html: item.icon }}
                       ></span>
                     </div>
-                    <div className="contant-info-content-title text-[#838694] w-[25%] ml-[12px] text-[22px] capitalize font-normal">
+                    <div className="contant-info-content-title text-[#838694] w-[25%] ml-[12px] text-[22px] sm:text-[19px] vsm:text-[18px] capitalize font-normal">
                       {item.title}
                     </div>
-                    <div className="contant-info-content text-[22px] capitalize font-normal ">
+                    <div className="contant-info-content text-[22px] sm:text-[19px] vsm:text-[18px] capitalize font-normal ">
                       {item.info}
                     </div>
                   </li>
@@ -67,7 +67,7 @@ const Contact = () => {
                     <div className="grid grid-cols-12 gap-6">
                       <div className="xl:col-span-6 lg:col-span-6 md:col-span-6 sm:col-span-12">
                         <input
-                          className="form-control transition-all duration-[0.3s] shadow-none h-[50px] text-[#777777] bg-white border-[1px] border-solid border-[#e7eaf0] py-[5px] px-5 w-full focus:shadow-[0px_10px_14px_0px_rgba(12,0,46,0.06)] focus:border-[1px] focus:border-solid focus:border-[#ff60a3] focus:w-full"
+                          className="form-control transition-all duration-[0.3s] shadow-none h-[50px] text-[#777777] bg-white border-[1px] border-solid border-[#e7eaf0] py-[5px] px-5 w-full focus:shadow-[0px_10px_14px_0px_rgba(12,0,46,0.06)] focus:border-[1px] focus:border-solid focus:border-[#06bbc4] focus:w-full"
                           type="text"
                           name="name"
                           placeholder="Name *"
@@ -75,7 +75,7 @@ const Contact = () => {
                       </div>
                       <div className="xl:col-span-6 lg:col-span-6 md:col-span-6 sm:col-span-12">
                         <input
-                          className="form-control transition-all duration-[0.3s] shadow-none h-[50px] text-[#777777] bg-white border-[1px] border-solid border-[#e7eaf0] py-[5px] px-5 w-full focus:shadow-[0px_10px_14px_0px_rgba(12,0,46,0.06)] focus:border-[1px] focus:border-solid focus:border-[#ff60a3] focus:w-full"
+                          className="form-control transition-all duration-[0.3s] shadow-none h-[50px] text-[#777777] bg-white border-[1px] border-solid border-[#e7eaf0] py-[5px] px-5 w-full focus:shadow-[0px_10px_14px_0px_rgba(12,0,46,0.06)] focus:border-[1px] focus:border-solid focus:border-[#06bbc4] focus:w-full"
                           type="email"
                           name="email"
                           placeholder="E-mail *"
@@ -83,7 +83,7 @@ const Contact = () => {
                       </div>
                       <div className="xl:col-span-12 lg:col-span-12 md:col-span-12 sm:col-span-12">
                         <input
-                          className="form-control transition-all duration-[0.3s] shadow-none h-[50px] text-[#777777] bg-white border-[1px] border-solid border-[#e7eaf0] py-[5px] px-5 w-full focus:shadow-[0px_10px_14px_0px_rgba(12,0,46,0.06)] focus:border-[1px] focus:border-solid focus:border-[#ff60a3] focus:w-full"
+                          className="form-control transition-all duration-[0.3s] shadow-none h-[50px] text-[#777777] bg-white border-[1px] border-solid border-[#e7eaf0] py-[5px] px-5 w-full focus:shadow-[0px_10px_14px_0px_rgba(12,0,46,0.06)] focus:border-[1px] focus:border-solid focus:border-[#06bbc4] focus:w-full"
                           type="text"
                           name="subject"
                           placeholder="Subject"
@@ -91,7 +91,7 @@ const Contact = () => {
                       </div>
                       <div className="xl:col-span-12 lg:col-span-12 md:col-span-12 sm:col-span-12">
                         <textarea
-                          className="form-control transition-all duration-[0.3s] shadow-none h-[133px] text-[#777777] mb-[30px] bg-white border-[1px] border-solid border-[#e7eaf0] py-[15px] px-5 w-full focus:shadow-[0px_10px_14px_0px_rgba(12,0,46,0.06)] focus:border-[1px] focus:border-solid focus:border-[#ff60a3] focus:w-full"
+                          className="form-control transition-all duration-[0.3s] shadow-none h-[133px] text-[#777777] mb-[30px] bg-white border-[1px] border-solid border-[#e7eaf0] py-[15px] px-5 w-full focus:shadow-[0px_10px_14px_0px_rgba(12,0,46,0.06)] focus:border-[1px] focus:border-solid focus:border-[#06bbc4] focus:w-full"
                           name="message"
                           cols="30"
                           rows="8"

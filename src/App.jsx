@@ -15,11 +15,11 @@ import Home from "./components/Home.jsx";
 import About from "./components/About.jsx";
 import Services from "./components/Services.jsx";
 import Education from "./components/Education.jsx";
-import Portfolio from "./components/Portfolio.jsx";
-import Team from "./components/Team.jsx";
+// import Portfolio from "./components/Portfolio.jsx";
+// import Team from "./components/Team.jsx";
 import Pricing from "./components/Pricing.jsx";
-import Video from "./components/Video.jsx";
-import Blog from "./components/Blog.jsx";
+// import Video from "./components/Video.jsx";
+// import Blog from "./components/Blog.jsx";
 import Contact from "./components/Contact.jsx";
 import Footer from "./components/Footer.jsx";
 
@@ -40,27 +40,27 @@ export default function App() {
         <About />
         <Services />
         <Education />
-        <Portfolio />
-        <Team />
+        {/* <Portfolio /> */}
+        {/* <Team /> */}
         <Pricing />
-        <Video />
-        <Blog />
+        {/* <Video /> */}
+        {/* <Blog /> */}
         <Contact />
         <Footer />
         <ProgressScrolltop />
       </ParallaxProvider>
       <AnimatedCursor
         innerSize={8}
-        outerSize={44}
+        outerSize={35}
         outerStyle={{
-          border: "1px solid #ff2f00",
+          border: "1px solid var(--main_color)",
         }}
         innerStyle={{
-          backgroundColor: "#ff2f00",
+          backgroundColor: "var(--main_color)",
         }}
-        outerAlpha={0.3}
-        innerScale={0.7}
-        outerScale={1.2}
+        outerAlpha={0}
+        innerScale={1}
+        outerScale={1.4}
       />
     </>
   );

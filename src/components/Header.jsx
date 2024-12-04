@@ -52,23 +52,27 @@ const Header = () => {
         <div className="grid grid-cols-12 gap-6">
           <div className="col-span-12">
             <div
-              className={`proloy-main-manu-content bg-white rounded-[30px] py-0 px-[50px] h-[100px]  ${
+              className={`proloy-main-manu-content bg-white rounded-[30px] py-0 vsm:px-[20px] px-[50px] h-[100px]  ${
                 sticky ? "sticky" : ""
               }`}
             >
               <Navbar fluid={false} rounded>
                 <div className="header-logo inline-block py-5 px-0">
                   <Link href="/">
-                    <img src={MenuData.logo} alt="Flowbite React Logo" />
+                    <img
+                      src={MenuData.logo}
+                      alt="Flowbite React Logo"
+                      className="vsm:w-[110px] w-[150px]"
+                    />
                   </Link>
                 </div>
                 <div className="proloy-right-wrape xl:block flex order-2">
                   <div className="proloy-language-wrape xl:float-right my-[38px] mx-0 xl:pr-0 lg:pr-[70] md:pr-[70] sm:pr-[30] order-2">
-                    <select className="cursor-pointer capitalize p-0">
+                    <select className="cursor-pointer focus:outline-none capitalize p-0">
                       <option value="1" selected="">
                         eng
                       </option>
-                      <option value="2">ger</option>
+                      <option value="2">ar</option>
                     </select>
                   </div>
                   <ul className="header-top-social-wrape xl:float-right my-[25px] mx-0 sm:hidden order-1 ">
@@ -79,7 +83,7 @@ const Header = () => {
                       >
                         <Link to={item.link}>
                           <i
-                            className={` text-lg text-center text-[#838694] w-[50px] h-[50px] !leading-[50px] border-[1px] border-solid border-[#f1f1f1] rounded-[50%]  group-hover:text-white group-hover:bg-[#ff4a54] ${item.icon}`}
+                            className={` text-lg text-center text-[#838694] w-[50px] h-[50px] !leading-[50px] border-[1px] border-solid border-[#f1f1f1] rounded-[50%]  group-hover:text-white group-hover:bg-[#06bbc4] ${item.icon}`}
                           ></i>
                         </Link>
                       </li>
@@ -88,7 +92,7 @@ const Header = () => {
                   <Navbar.Toggle className="xl:hidden md:inline-block proloy-toggle-btn float-right order-3" />
                 </div>
                 <div id="mobile-menu" ref={navLinksRef}>
-                  <Navbar.Collapse className="xl:inline-block xl:w-auto flowbite-navbar-collapse">
+                  <Navbar.Collapse className="2xl:inline-block xl:w-auto flowbite-navbar-collapse">
                     {MenuData.Menu.map((item, i) => (
                       <Navbar.Link key={i} href={item.link}>
                         {item.title}

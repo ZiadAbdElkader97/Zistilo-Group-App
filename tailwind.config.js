@@ -31,6 +31,9 @@ export default {
         sm: {
           max: "767.98px",
         },
+        vsm: {
+          max: "420px",
+        },
       },
     },
   },

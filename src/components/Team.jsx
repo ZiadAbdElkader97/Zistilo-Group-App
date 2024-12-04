@@ -79,10 +79,10 @@ const Team = () => {
                         </span>
                       </div>
                     </div>
-                    <h3 className="team-title text-[28px] font-medium capitalize text-white mt-0 mx-0 mb-[15px] ">
+                    <h3 className="team-title text-[28px] vsm:text-[24px] font-medium capitalize text-white mt-0 mx-0 mb-[15px] ">
                       {item.name}
                     </h3>
-                    <h4 className="team-desig text-lg font-normal text-white capitalize ">
+                    <h4 className="team-desig text-lg vsm:text-[18px] font-normal text-white capitalize ">
                       {item.position}
                     </h4>
                     <ul className="team-social-wrape transition-all duration-[0.3s] invisible opacity-0 -mt-[30px] border-t-[1px] border-solid border-t-white group-hover:visible group-hover:opacity-[1] group-hover:mt-5 group-hover:pt-5">
@@ -92,7 +92,7 @@ const Team = () => {
                           key={i}
                         >
                           <Link
-                            className="text-lg w-[50px] h-[50px] text-center !leading-[50px] rounded-[50%] text-white block transition-all duration-[0.3s] border-[1px] border-solid border-[#595959] group-hover/second:bg-[#ff4a54] group-hover/second:border-[#ff4a54]"
+                            className="text-lg w-[50px] h-[50px] text-center !leading-[50px] rounded-[50%] text-white block transition-all duration-[0.3s] border-[1px] border-solid border-[#595959] group-hover/second:bg-[#06bbc4] group-hover/second:border-[#06bbc4]"
                             to={items.link}
                           >
                             <i className={items.icon}></i>

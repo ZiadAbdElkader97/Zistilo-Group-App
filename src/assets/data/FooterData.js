@@ -1,4 +1,4 @@
-import footer_logo from "../images/common/logo-2.png";
+import footer_logo from "../images/common/logo.png";
 import footer_bgimg from "../images/common/footer-bg.jpg";
 
 // Footer Data
@@ -7,9 +7,9 @@ export const FooterData = {
   bgimg: footer_bgimg,
   brief:
     "But I must explain to you how all this mistaken idea of denouncing asure and praising pain was and born I will give you a",
-  title: '<span class="text-[#ff4a54]">latest</span> news',
-  title2: '<span class="text-[#ff4a54]">quick</span> link',
-  title3: '<span class="text-[#ff4a54]">about</span> me',
+  title: '<span class="text-[#06bbc4]">latest</span> news',
+  title2: '<span class="text-[#06bbc4]">quick</span> link',
+  title3: '<span class="text-[#06bbc4]">about</span> me',
   copyright: "© All Right Reserved by",
   author: " theme_group",
   authorlink: "#",

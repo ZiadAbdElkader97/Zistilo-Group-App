@@ -5,14 +5,13 @@ import img4 from "../images/hero/s4.png";
 
 // Home Data
 export const HomeData = {
-  title1: "hi i'm,",
-  title2: '<span class="my-stroke text-transparent ">proloy</span> hasan',
-  title3: "i am content writer",
+  title1: "hi, this is zistilo company",
+  title2: '<span class="my-stroke text-transparent ">zistilo</span> group',
+  title3: "Welcome To Zistilo Group",
   brief:
-    "lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam,",
+    "We take pride in providing innovative software solutions that meet the needs of our global customers, Founded in 2018 in Germany, We have succeeded in expanding our team to include more than 10 specialists dedicated to providing the best services and scientific and service applications, Explore our website to learn more about our products and how we can help you achieve your technology goals.",
   btntext: "about me",
   btnurl: "#",
-  btntext2: "Available For Freelancer",
   btnurl2: "#",
   img1: img1,
   img2: img2,
@@ -20,18 +19,18 @@ export const HomeData = {
   img4: img4,
   InfoList: [
     {
-      title: "born in",
-      info: "Australia",
+      title: "founded in",
+      info: "germany",
       delay: "500",
     },
     {
       title: "Experience",
-      info: "16+ Years",
+      info: "7+ Years",
       delay: "300",
     },
     {
-      title: "Dte Of Birth",
-      info: "21 May 1969",
+      title: "message us on",
+      info: "support@zistilo.com",
       delay: "200",
     },
   ],

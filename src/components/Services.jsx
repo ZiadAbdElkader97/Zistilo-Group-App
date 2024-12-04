@@ -7,11 +7,11 @@ const Services = () => {
   return (
     <>
       <div
-        id="services"
+        id="products"
         className="proloy-special-bg services-bg bg-center bg-cover relative bg-no-repeat -z-10 h-[400px]"
         style={{ backgroundImage: `url(${ServicesData.bgimage})` }}
       >
-        <div className="services-style absolute right-0 top-0 ">
+        <div className="services-style absolute right-0 top-10 w-[350px] vsm:w-[200px]">
           <img src={ServicesData.bgstyleimg} alt="services-img" />
         </div>
       </div>
@@ -24,11 +24,11 @@ const Services = () => {
         <div className="container">
           <div className="grid grid-cols-12 gap-6">
             <div className="col-span-12">
-              <div className="section-title-wrape mb-[60px]">
-                <h3 className=" font-semibold capitalize text-[60px] ">
+              <div className="section-title-wrape flex flex-col items-center mb-[60px]">
+                <h3 className=" font-semibold capitalize text-[60px] sm:text-[45px] vsm:text-[34px]">
                   {ServicesData.title}
                 </h3>
-                <h4 className=" font-normal text-[#838694] text-2xl capitalize ">
+                <h4 className="font-normal text-[#838694] max-w-[800px] mt-4 text-2xl sm:text-[20px] vsm:text-[18px] capitalize ">
                   {ServicesData.title2}
                 </h4>
               </div>
@@ -59,7 +59,7 @@ const Services = () => {
               >
                 {ServicesData.ServicesList.map((item, i) => (
                   <SwiperSlide key={i}>
-                    <div className="single-services-wrape relative z-[1] mt-[70px] mx-3 mb-[136px]  after:content-[''] after:rounded-[20px] after:absolute after:opacity-0 after:invisible after:transition-all after:duration-[0.3s] after:-z-[1] after:left-5 after:right-5 after:-top-5 after:-bottom-5 after:bg-[rgb(255,74,84,/15%)] after:scale-0">
+                    <div className="single-services-wrape relative z-[1] mt-[90px] mx-3 mb-[140px] after:content-[''] after:rounded-[20px] after:absolute after:opacity-0 after:invisible after:transition-all after:duration-[0.3s] after:-z-[1] after:left-5 after:right-5 after:-top-5 after:-bottom-5 after:bg-[rgb(255,74,84,/15%)] after:scale-0">
                       <div className="single-services-content relative bg-white z-[1] pt-[35px] px-[15px] pb-[30px] rounded-[20px] shadow-[0px_0px_15px_0px_rgba(199,199,199,0.4)] ">
                         <div className="services-icon flex items-center justify-center">
                           <span
@@ -67,10 +67,10 @@ const Services = () => {
                             dangerouslySetInnerHTML={{ __html: item.icon }}
                           ></span>
                         </div>
-                        <h3 className=" text-[28px] capitalize my-[25px] mx-0 ">
+                        <h3 className="text-[28px] sm:text-[23px] capitalize my-[25px] mx-0 ">
                           {item.title}
                         </h3>
-                        <p>{item.brief}</p>
+                        <p className="sm:text-[17px]">{item.brief}</p>
                         <div className="services-hvr absolute w-full top-0 right-0 bottom-0 left-0 -z-[1] h-full ">
                           <img
                             src={item.slidimg1}

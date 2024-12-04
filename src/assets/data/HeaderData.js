@@ -5,7 +5,7 @@ export const MenuData = {
   logo: logo,
   Menu: [
     {
-      title: "Home Page",
+      title: "Home",
       link: "#home",
     },
     {
@@ -13,23 +13,35 @@ export const MenuData = {
       link: "#about",
     },
     {
-      title: "Services",
-      link: "#services",
+      title: "Products/Services",
+      link: "#products",
+    },
+    // {
+    //   title: "Blog",
+    //   link: "#blog",
+    // },
+    {
+      title: "FAQ",
+      link: "#faq",
     },
     {
-      title: "Portfolio",
-      link: "#portfolio",
+      title: "Careers",
+      link: "#careers",
     },
     {
-      title: "Team",
-      link: "#team",
+      title: "E-Commerce Section",
+      link: "#ecommerce",
     },
+    // {
+    //   title: "Portfolio",
+    //   link: "#portfolio",
+    // },
+    // {
+    //   title: "Team",
+    //   link: "#team",
+    // },
     {
-      title: "Blog",
-      link: "#blog",
-    },
-    {
-      title: "Contact",
+      title: "Contact/Support",
       link: "#contact",
     },
   ],

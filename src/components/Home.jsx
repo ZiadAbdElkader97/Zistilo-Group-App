@@ -20,7 +20,7 @@ const Home = () => {
             translateX={["-50px", "0px"]}
             className="hero-style-img-2 absolute -z-[1] left-[5%] bottom-[10%]"
           >
-            <img src={HomeData.img2} alt="hero-style-img-2" />
+            <img src={HomeData.img2} alt="hero-style-img-2" className="w-48" />
           </Parallax>
           <Parallax
             translateX={["-30px", "30px"]}
@@ -41,26 +41,30 @@ const Home = () => {
               <div className="xl:col-span-6 lg:col-span-10 md:col-span-12 sm:col-span-12">
                 <div className="proloy-hero-content-wrape py-[240px] px-0 ">
                   <h4
-                    className=" capitalize relative inline-block text-[28px] after:content-[''] after:absolute after:w-[70px] after:h-[2px] after:-right-20 after:top-[18px] after:bg-black "
+                    className="capitalize text-[28px] vsm:text-[20px]"
                     data-aos="fade-up"
                     data-aos-delay="200"
                   >
                     {HomeData.title1}
                   </h4>
                   <h1
-                    className=" capitalize font-medium text-[100px] sm:text-[80px] "
+                    className=" capitalize font-medium text-[100px] sm:text-[80px] vsm:text-[55px]"
                     data-aos="fade-up"
                     data-aos-delay="300"
                     dangerouslySetInnerHTML={{ __html: HomeData.title2 }}
                   ></h1>
                   <div
-                    className="hero-desig-title  text-3xl font-semibold font-Caveat tracking-[8px] mb-[15px] "
+                    className="hero-desig-title text-3xl vsm:text-xl font-semibold font-Caveat tracking-[8px] vsm:tracking-[6px] mb-[15px] "
                     data-aos="fade-up"
                     data-aos-delay="400"
                   >
                     {HomeData.title3}
                   </div>
-                  <p data-aos="fade-up" data-aos-delay="500">
+                  <p
+                    className="vsm:text-[15px]"
+                    data-aos="fade-up"
+                    data-aos-delay="500"
+                  >
                     {HomeData.brief}
                   </p>
                   <div className="hero-btn btn-wrape">
@@ -78,27 +82,24 @@ const Home = () => {
                       data-aos-delay="500"
                       to={HomeData.btnurl2}
                       className="btn-4 ml-2 magic-hover magic-hover__square"
-                    >
-                      <i className="fa fa-check mr-1"></i>
-                      {HomeData.btntext2}
-                    </Link>
+                    ></Link>
                   </div>
                 </div>
               </div>
               <div className="xl:col-start-7 xl:col-span-5 lg:col-span-10 md:col-span-12 sm:col-span-12">
-                <ul className="hero-personal-info-wrape flex items-center absolute bottom-10 ">
+                <ul className="hero-personal-info-wrape flex vsm:flex-wrap vsm:gap-y-2 items-center absolute bottom-10 ">
                   {HomeData.InfoList.map((item, i) => (
                     <Tilt className="inline-block" key={i}>
                       <li
-                        className="btn-tilt bg-white p-5 mr-[15px] rounded-[5px] border-l-[5px] border-solid border-l-[#ff4a54]"
+                        className="btn-tilt bg-white p-5 vsm:p-4 mr-[15px] rounded-[5px] border-l-[5px] border-solid border-l-[#06bbc4]"
                         data-aos="fade-right"
                         data-aos-duration={item.delay}
                         data-aos-delay={item.delay}
                       >
-                        <h4 className=" text-base capitalize text-[#838694] ">
+                        <h4 className=" text-base capitalize text-[#838694] vsm:text-[16px]">
                           {item.title}
                         </h4>
-                        <h3 className=" capitalize m-0 text-[22px] ">
+                        <h3 className=" capitalize m-0 text-[22px] vsm:text-[16px]">
                           {item.info}
                         </h3>
                       </li>

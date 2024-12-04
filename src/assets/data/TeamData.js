@@ -84,7 +84,7 @@ export const TeamData = {
     },
     {
       img: team1,
-      name: "hossain shamrat",
+      name: "mohamed ebn khaled",
       position: "ui/ux designer",
       sociallist: [
         {

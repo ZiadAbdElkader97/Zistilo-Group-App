@@ -13,13 +13,13 @@ const Blog = () => {
   return (
     <>
       <div className="proloy-special-bg-wrape special-bg bg-center bg-cover relative bg-no-repeat -z-[1] h-[850px] bg-[#f7faff]">
-        <div className="special-style absolute right-0 top-0">
+        <div className="special-style absolute right-0 top-[230px] w-[400px] vsm:w-[300px]">
           <img src={BlogData.sbgimg2} alt="special-img" />
         </div>
       </div>
-      <div id="blog" className="proloy-blog-wrape pb-[100px] mt-[-415px]">
+      <div id="blog" className="proloy-blog-wrape pb-[100px] mt-[-500px]">
         <div className="container">
-          <div className="grid grid-cols-12 gap-6">
+          <div className="grid grid-cols-12 gap-2">
             <div className="xl:col-span-6 lg:col-span-6 md:col-span-12 sm:col-span-12">
               <div className="section-title-wrape relative mb-[75px]">
                 <Parallax
@@ -29,7 +29,7 @@ const Blog = () => {
                   <img src={BlogData.sbgimg1} alt="section-img" />
                 </Parallax>
                 <h3
-                  className="font-semibold capitalize text-[60px]"
+                  className="font-semibold capitalize text-[60px] sm:text-[45px] vsm:text-[35px]"
                   data-aos="fade-up"
                   data-aos-duration="400"
                   data-aos-delay="200"
@@ -37,7 +37,7 @@ const Blog = () => {
                   {BlogData.title}
                 </h3>
                 <h4
-                  className="font-normal text-[#838694] text-2xl capitalize"
+                  className="font-normal text-[#838694] text-2xl sm:text-[25px] vsm:text-[20px] capitalize"
                   data-aos="fade-up"
                   data-aos-duration="600"
                   data-aos-delay="300"

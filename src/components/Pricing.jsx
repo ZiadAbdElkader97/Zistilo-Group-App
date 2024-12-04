@@ -13,11 +13,11 @@ const Pricing = () => {
                 data-aos="fade-up"
                 data-aos-delay="200"
               >
-                <h3 className="font-semibold capitalize text-[60px]">
+                <h3 className="font-semibold capitalize text-[60px] sm:text-[45px] vsm:text-[35px]">
                   {PricingtableData.title}
                 </h3>
-                <h4 className="font-normal text-[#838694] text-2xl capitalize">
-                  {PricingtableData.title}
+                <h4 className="font-normal text-[#838694] text-2xl sm:text-[xl] vsm:text-[18px] capitalize">
+                  {PricingtableData.title2}
                 </h4>
               </div>
             </div>

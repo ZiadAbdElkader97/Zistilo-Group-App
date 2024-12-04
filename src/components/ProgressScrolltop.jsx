@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react"; // Assuming you have a CSS module for styling
 
-const ProgressScrolltop = () => { 
+const ProgressScrolltop = () => {
   const progressPathRef = useRef(null);
 
   useEffect(() => {
@@ -60,7 +60,7 @@ const ProgressScrolltop = () => {
   return (
     <div
       className="progress-wrap fixed right-[50px] bottom-[50px] h-[46px] w-[46px] cursor-pointer block rounded-[50px] shadow-[inset_0_0_0_2px_rgba(0,0,0,0.2)] z-[10000] opacity-0 invisible translate-y-[15px] transition-all duration-[200ms] ease-linear after:absolute after:text-center after:leading-[46px] after:text-[24px] after:left-0 after:top-0 after:h-[46px] after:w-[46px] after:cursor-pointer after:block
-    after: after: after: after:transition-all after:duration-[200ms] after:ease-linear after:z-[1] after:content-['\f176'] after:font-Fontawesome after:text-[#ff5100] hover:after:opacity-[1] before:absolute before:text-center before:leading-[46px] before:text-[24px] before:opacity-0 before:left-0 before:top-0 before:h-[46px] before:w-[46px] before:cursor-pointer before:block before:z-[2] before:transition-all before:duration-[200ms] before:ease-linear before:content-['\f176'] before:font-Fontawesome before:text-[#ff5100] hover:before:opacity-[1] hover:before:text-[#ff5100]"
+    after: after: after: after:transition-all after:duration-[200ms] after:ease-linear after:z-[1] after:content-['\f176'] after:font-Fontawesome after:text-[#06bbc4] hover:after:opacity-[1] before:absolute before:text-center before:leading-[46px] before:text-[24px] before:opacity-0 before:left-0 before:top-0 before:h-[46px] before:w-[46px] before:cursor-pointer before:block before:z-[2] before:transition-all before:duration-[200ms] before:ease-linear before:content-['\f176'] before:font-Fontawesome before:text-[#06bbc4] hover:before:opacity-[1] hover:before:text-[#06bbc46d]"
     >
       <svg
         className="progress-circle svg-content"
@@ -70,7 +70,7 @@ const ProgressScrolltop = () => {
       >
         <path
           ref={progressPathRef}
-          className="fill-none box-border stroke-[4] transition-all duration-[200ms] ease-linear stroke-[#ff5100]"
+          className="fill-none box-border stroke-[4] transition-all duration-[200ms] ease-linear stroke-[#06bbc4]"
           d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
         ></path>
       </svg>

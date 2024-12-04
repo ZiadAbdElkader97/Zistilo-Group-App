@@ -4,7 +4,6 @@ import Tilt from "react-parallax-tilt";
 import Lightbox from "react-18-image-lightbox";
 import { PortfolioData } from "../assets/data/PortfolioData";
 
-
 const Portfolio = () => {
   // data
   const categories = [
@@ -50,15 +49,17 @@ const Portfolio = () => {
   return (
     <>
       <div
-        id="portfolio" className="proloy-portfolio-wraper pt-[30px] pb-[100px]">
+        id="portfolio"
+        className="proloy-portfolio-wraper pt-[30px] pb-[100px]"
+      >
         <div className="container">
           <div className="grid grid-cols-12 gap-6 text-center">
             <div className="col-span-12">
               <div className="section-title-wrape uppercase relative mb-[60px]">
-                <h3 className="font-semibold capitalize text-[60px]">
+                <h3 className="font-semibold capitalize text-[60px] sm:text-[50px] vsm:text-[40px]">
                   {PortfolioData.title}
                 </h3>
-                <h4 className="font-normal text-[#838694] text-2xl capitalize">
+                <h4 className="font-normal text-[#838694] text-2xl vsm:text-[22px] capitalize">
                   {PortfolioData.title2}
                 </h4>
               </div>
@@ -67,7 +68,7 @@ const Portfolio = () => {
                   <li
                     onClick={() => filterItems(cate)}
                     key={i}
-                    className={`m-0 inline-block capitalize text-[22px] font-medium cursor-pointer text-[#555555] font-Kanit list-none py-0 px-[10px] transition-all duration-[0.2s]  hover:text-[#ff4a54] ${
+                    className={`m-0 inline-block capitalize text-[22px] sm:text-[20px] vsm:text-[18px] font-medium cursor-pointer text-[#555555] font-Kanit list-none py-0 px-[10px] transition-all duration-[0.2s]  hover:text-[#06bbc4] ${
                       cate === activeCategory ? "active" : ""
                     }`}
                   >
@@ -94,7 +95,7 @@ const Portfolio = () => {
                       />
                       <div className="portfolio-pop absolute left-[50%] transition-all duration-[0.3s] top-[50%] -translate-x-[50%] -translate-y-[50%] ">
                         <div
-                          className=" w-[50px] h-[50px] inline-block text-center rounded-[50%] text-[#ff4a54] transition-all duration-[0.3s] scale-0 invisible opacity-0 !leading-[55px] bg-[#111111] text-xl group-hover:scale-[1] group-hover:visible group-hover:opacity-[1]"
+                          className=" w-[50px] h-[50px] inline-block text-center rounded-[50%] text-[#06bbc4] transition-all duration-[0.3s] scale-0 invisible opacity-0 !leading-[55px] bg-[#111111] text-xl group-hover:scale-[1] group-hover:visible group-hover:opacity-[1]"
                           onClick={() => handleOpenLightbox(i)}
                         >
                           <i className="fa fa-plus"></i>
@@ -103,7 +104,7 @@ const Portfolio = () => {
                     </div>
                     <div className="folio-hvr-title absolute left-[30px] top-[30px] ">
                       <Link to={item.link}>
-                        <h3 className=" text-lg p-[10px] capitalize font-semibold bg-[#ff4a54] text-white rounded-[5px] inline-block duration-[0.3s] opacity-0 invisible -ml-[10px] group-hover:opacity-[1] group-hover:visible group-hover:ml-0 ">
+                        <h3 className=" text-lg p-[10px] capitalize font-semibold bg-[#06bbc4] text-white rounded-[5px] inline-block duration-[0.3s] opacity-0 invisible -ml-[10px] group-hover:opacity-[1] group-hover:visible group-hover:ml-0 ">
                           {item.title}
                         </h3>
                       </Link>

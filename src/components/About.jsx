@@ -4,8 +4,6 @@ import { Parallax } from "react-scroll-parallax";
 import VisibilitySensor from "react-visibility-sensor";
 import { AboutData } from "../assets/data/AboutData";
 
-
-
 const About = () => {
   return (
     <>
@@ -21,7 +19,7 @@ const About = () => {
                   <img src={AboutData.commonimg} alt="section-img" />
                 </Parallax>
                 <h3
-                  className=" font-semibold capitalize text-[60px] "
+                  className=" font-semibold capitalize text-[60px] vsm:text-[45px]"
                   data-aos="fade-up"
                   data-aos-duration="400"
                   data-aos-delay="200"
@@ -29,7 +27,7 @@ const About = () => {
                   {AboutData.title}
                 </h3>
                 <h4
-                  className=" font-normal text-[#838694] text-2xl capitalize "
+                  className=" font-normal text-[#838694] text-2xl capitalize vsm:text-xl"
                   data-aos="fade-up"
                   data-aos-duration="600"
                   data-aos-delay="300"
@@ -37,29 +35,24 @@ const About = () => {
                   {AboutData.title2}
                 </h4>
               </div>
-              <div className="proloy-about-btn btn-social flex items-center">
-                <Link to={AboutData.btnurl} className="btn-1">
-                  {AboutData.btntext} <i className="fa fa-download"></i>
-                </Link>
-                <ul className="social-wrape">
-                  {AboutData.SocialList.map((item, i) => (
-                    <li
-                      key={i}
-                      className=" my-0 mr-0 ml-[15px] inline-block transition-all duration-[0.3s]"
-                      data-aos="fade-right"
-                      data-aos-duration="500"
-                      data-aos-delay="500"
+              <ul className="social-wrape">
+                {AboutData.SocialList.map((item, i) => (
+                  <li
+                    key={i}
+                    className=" my-0 mr-0 ml-[15px] inline-block transition-all duration-[0.3s]"
+                    data-aos="fade-right"
+                    data-aos-duration="500"
+                    data-aos-delay="500"
+                  >
+                    <Link
+                      className=" text-base w-[50px] h-[50px] text-center !leading-[50px] rounded-[50%] block font-semibold transition-all duration-[0.3s] text-[#212123] uppercase border-[1px] border-solid border-[#e1e1e1] hover:bg-[#06bbc4] hover:text-white hover:border-[#06bbc4] "
+                      to={item.link}
                     >
-                      <Link
-                        className=" text-base w-[50px] h-[50px] text-center !leading-[50px] rounded-[50%] block font-semibold transition-all duration-[0.3s] text-[#212123] uppercase border-[1px] border-solid border-[#e1e1e1] hover:bg-[#ff4a54] hover:text-white hover:border-[#ff4a54] "
-                        to={item.link}
-                      >
-                        {item.title}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+                      {item.title}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
             </div>
             <div className="xl:col-span-6 lg:col-span-6 md:col-span-12 sm:col-span-12">
               <div
@@ -83,19 +76,19 @@ const About = () => {
               >
                 {AboutData.ResumeList.map((item, i) => (
                   <li
-                    className="magic-hover magic-hover__square flex items-center m-0 border-[1px] border-solid border-[#e1e1e1] transition-all duration-[0.3s] p-[15px] sm:!block hover:ml-[10px] group"
+                    className="magic-hover magic-hover__square flex items-center m-0 border-[1px] border-solid border-[#e1e1e1] transition-all duration-[0.3s] p-[15px] hover:ml-[10px] group"
                     key={i}
                   >
-                    <div className="about-resume-icon w-[15%] ">
+                    <div className="about-resume-icon w-[15%] vsm:w-[30%] ">
                       <span
-                        className=" w-[70px] transition-all duration-[0.3s] h-[70px] inline-flex items-center bg-[#f7faff] justify-center group-hover:!bg-[#ff4a54] group-hover:!rounded-[10px]"
+                        className="w-[70px] transition-all duration-[0.3s] h-[70px] inline-flex items-center bg-[#f7faff] justify-center group-hover:!bg-[#06bbc4] group-hover:!rounded-[10px]"
                         dangerouslySetInnerHTML={{ __html: item.icon }}
                       ></span>
                     </div>
-                    <div className="about-resume-title text-2xl capitalize  w-[30%] ">
+                    <div className="about-resume-title text-2xl vsm:text-[16px] sm:text-[20px] capitalize vsm:ml-1 w-[30%] vsm:w-[40%]">
                       {item.title}
                     </div>
-                    <div className="about-resume-info text-2xl capitalize ">
+                    <div className="about-resume-info text-2xl vsm:text-[16px] sm:text-[20px] capitalize vsm:w-[60%]">
                       {item.info}
                     </div>
                   </li>

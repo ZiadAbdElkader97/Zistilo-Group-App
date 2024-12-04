@@ -34,20 +34,20 @@ export const EducationData = {
     {
       date: "2003-2009",
       title: "P.S.C - S.S.C",
-      institute: "sammilani institution",
+      institute: "sammilani inst.",
       link: "#",
       duration: "100",
     },
     {
       date: "2009-2011",
       title: "H.S.C",
-      institute: "dr. armc, college",
+      institute: "armc, college",
       link: "#",
       duration: "200",
     },
     {
       date: "2012-2018",
-      title: "Bsc & Msc Zoology",
+      title: "Msc Zoology",
       institute: "govt. (m m) college",
       link: "#",
       duration: "300",

@@ -25,29 +25,29 @@ const Education = () => {
             <div className="xl:col-start-4 xl:col-span-4 lg:col-span-6 md:col-span-12 sm:col-span-12">
               <div className="proloy-work-resume-wrape py-[50px] px-0 md:py-5 sm:py-5 ">
                 <div className="proloy-work-resume-heading flex items-center justify-content-center">
-                  <h3 className=" font-medium capitalize text-4xl ">
+                  <h3 className="font-medium capitalize text-4xl vsm:text-[28px]">
                     {EducationData.title}
                   </h3>
-                  <span className=" inline-block w-full relative ml-5 h-[1px] bg-[#e1e1e1] before:content-[''] before:left-0 before:absolute before:bg-[#ff4a54] before:w-[100px] before:h-[5px] before:-top-[2px] "></span>
+                  <span className=" inline-block w-full relative ml-5 h-[1px] bg-[#e1e1e1] before:content-[''] before:left-0 before:absolute before:bg-[#06bbc4] before:w-[100px] before:h-[5px] before:-top-[2px] "></span>
                 </div>
                 <ul className="proloy-work-resume-content mt-[25px]">
                   {EducationData.ExprienceList.map((item, i) => (
                     <Tilt key={i}>
                       <li
-                        className="flex items-center justify-center mb-5 bg-white transition-all duration-[0.3s] py-[25px] px-5 border-[1px] border-solid border-[#f8f8f8]  hover:border-[#ff4a54] hover:rounded-[15px] hover:shadow-[0px_2px_10px_0px_rgba(255,74,84,0.1)] group"
+                        className="flex items-center justify-center mb-5 bg-white transition-all duration-[0.3s] py-[25px] px-5 border-[1px] border-solid border-[#f8f8f8]  hover:border-[#06bbc4] hover:rounded-[15px] hover:shadow-[0px_2px_10px_0px_rgba(255,74,84,0.1)] group"
                         data-aos="fade-up"
                         data-aos-duration={item.duration}
                       >
                         <div className="proloy-work-education-time text-base text-[#838694] ">
-                          <span className=" h-[5px] inline-block rounded-[50%] relative w-[5px] mr-[25px] bg-[#949494] after:content-[''] after:absolute after:-top-[10px] after:-bottom-[10px] after:rounded-[50%] after:transition-all after:duration-[0.3s] after:-left-[10px] after:-right-[10px] after:p-[10px] after:border-[1px] after:border-solid after:border-[#9e9e9e]  group-hover:bg-[#ff4a54] group-hover:after:border-[#ff4a54]"></span>{" "}
+                          <span className=" h-[5px] inline-block rounded-[50%] relative w-[5px] mr-[25px] bg-[#949494] after:content-[''] after:absolute after:-top-[10px] after:-bottom-[10px] after:rounded-[50%] after:transition-all after:duration-[0.3s] after:-left-[10px] after:-right-[10px] after:p-[10px] after:border-[1px] after:border-solid after:border-[#9e9e9e]  group-hover:bg-[#06bbc4] group-hover:after:border-[#06bbc4]"></span>{" "}
                           {item.date}
                         </div>
                         <div className="proloy-work-education-title-web ml-[35px] ">
-                          <h4 className=" capitalize text-2xl font-medium mb-[6px] ">
+                          <h4 className=" capitalize text-2xl vsm:text-[18px] font-medium mb-[6px] ">
                             {item.title}
                           </h4>
                           <Link
-                            className=" text-lg text-[#838694] "
+                            className=" text-lg vsm:text-[16px] text-[#838694] "
                             to={item.link}
                           >
                             {item.web}
@@ -62,29 +62,29 @@ const Education = () => {
             <div className="xl:col-start-9 xl:col-span-4 lg:col-span-6 md:col-span-12 sm:col-span-12">
               <div className="proloy-work-resume-wrape py-[50px] px-0 md:py-5 sm:py-5 ">
                 <div className="proloy-work-resume-heading flex items-center justify-content-center">
-                  <h3 className=" font-medium capitalize text-4xl ">
+                  <h3 className="font-medium capitalize text-4xl vsm:text-[28px]">
                     {EducationData.title2}
                   </h3>
-                  <span className=" inline-block w-full relative ml-5 h-[1px] bg-[#e1e1e1] before:content-[''] before:left-0 before:absolute before:bg-[#ff4a54] before:w-[100px] before:h-[5px] before:-top-[2px] "></span>
+                  <span className=" inline-block w-full relative ml-5 h-[1px] bg-[#e1e1e1] before:content-[''] before:left-0 before:absolute before:bg-[#06bbc4] before:w-[100px] before:h-[5px] before:-top-[2px] "></span>
                 </div>
                 <ul className="proloy-work-resume-content mt-[25px]">
                   {EducationData.EducationList.map((item, i) => (
                     <Tilt key={i}>
                       <li
-                        className="flex items-center justify-center mb-5 bg-white transition-all duration-[0.3s] py-[25px] px-5 border-[1px] border-solid border-[#f8f8f8]  hover:border-[#ff4a54] hover:rounded-[15px] hover:shadow-[0px_2px_10px_0px_rgba(255,74,84,0.1)] group"
+                        className="flex items-center justify-center mb-5 bg-white transition-all duration-[0.3s] py-[25px] px-5 border-[1px] border-solid border-[#f8f8f8]  hover:border-[#06bbc4] hover:rounded-[15px] hover:shadow-[0px_2px_10px_0px_rgba(255,74,84,0.1)] group"
                         data-aos="fade-up"
                         data-aos-duration={item.duration}
                       >
                         <div className="proloy-work-education-time text-base text-[#838694] ">
-                          <span className=" h-[5px] inline-block rounded-[50%] relative w-[5px] mr-[25px] bg-[#949494] after:content-[''] after:absolute after:-top-[10px] after:-bottom-[10px] after:rounded-[50%] after:transition-all after:duration-[0.3s] after:-left-[10px] after:-right-[10px] after:p-[10px] after:border-[1px] after:border-solid after:border-[#9e9e9e]  group-hover:bg-[#ff4a54] group-hover:after:border-[#ff4a54]"></span>
+                          <span className=" h-[5px] inline-block rounded-[50%] relative w-[5px] mr-[25px] bg-[#949494] after:content-[''] after:absolute after:-top-[10px] after:-bottom-[10px] after:rounded-[50%] after:transition-all after:duration-[0.3s] after:-left-[10px] after:-right-[10px] after:p-[10px] after:border-[1px] after:border-solid after:border-[#9e9e9e]  group-hover:bg-[#06bbc4] group-hover:after:border-[#06bbc4]"></span>
                           {item.date}
                         </div>
                         <div className="proloy-work-education-title-web ml-[35px] ">
-                          <h4 className=" capitalize text-2xl font-medium mb-[6px] ">
+                          <h4 className=" capitalize text-2xl vsm:text-[18px] font-medium mb-[6px] ">
                             {item.title}
                           </h4>
                           <Link
-                            className=" text-lg text-[#838694] "
+                            className=" text-lg vsm:text-[16px] text-[#838694] "
                             to={item.link}
                           >
                             {item.institute}
