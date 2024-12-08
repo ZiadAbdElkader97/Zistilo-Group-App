@@ -6,7 +6,7 @@ const Footer = () => {
     <>
       <footer
         id="proloy-footer-area"
-        className="proloy-footer-area relative pt-[100px] pb-20 mt-[120px]"
+        className="proloy-footer-area relative pt-[100px] pb-20"
         data-aos="fade-up"
         data-aos-duration="500"
       >

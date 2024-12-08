@@ -2,8 +2,9 @@ import bgimg from "../images/pricing/1.png";
 
 // Pricing Data
 export const PricingtableData = {
-  title: "Pricing Plan",
-  title2: "Plan Option",
+  title: "E-Commerce",
+  title2: "Pricing Plan Option",
+  brief: "Our subscriptions are designed to provide exceptional value and enhance your experience with our products, Visit our online store to purchase paid subscriptions and benefit from additional benefits in programs such as: Zistilo Analytica and Zistilo Health Monitor.",
   PricingtableList: [
     {
       symbol: "$",

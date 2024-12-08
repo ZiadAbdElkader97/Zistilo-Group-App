@@ -17,7 +17,7 @@ export const BlogData = {
   title: "Blog News",
   title2: "Latest News Tricks & Update",
   brief:
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod mpor ut labore etdolore magna aliqua. Ut enim ad minim veniam, quis nostrud exe citation ullamco nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor",
+    "Developer Tech offers the latest app developer news and strategy. We cover topics, including coding, monetisation, billing, marketing and design, within the app development industry. We aim to help developers by providing top-class practical content across many issues, Founded in 2018, we provide a channel for expert, brands and thought leaders to share content and engage with other industry professionals around the world.",
   sbgimg1: sbgimg1,
   sbgimg2: sbgimg2,
   Breadcrumbtitle: "Blog Details",

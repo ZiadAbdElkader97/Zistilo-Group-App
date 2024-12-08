@@ -187,7 +187,7 @@
   @apply left-0 m-auto fixed top-0 w-full z-[99] bg-white duration-[0.3s] shadow-[0px_0_15px_0px_rgba(0,0,0,0.14)] animate-[300ms_ease-in-out_0s_normal_none_1_running_fadeInDown] !rounded-none;
 }
 
-ul.proloy-about-resume-wrape li:nth-child(odd) {
+ul.about-resume-wrape li:nth-child(odd) {
   @apply bg-[#f7faff] border-[#f7faff];
 }
 
@@ -485,7 +485,7 @@ ul.portfolio-menu-wrape li.active {
 
 .flowbite-navbar-collapse ul > li.active,
 .flowbite-navbar-collapse ul > li {
-  @apply xl:after:absolute xl:after:content-[url('../images/common/arrow.png')] xl:after:left-0 xl:after:right-0 xl:after:-bottom-[15px] xl:after:invisible xl:after:opacity-0 xl:after:transition-all xl:after:duration-[0.3s];
+  @apply xl:after:absolute xl:after:left-0 xl:after:right-0 xl:after:-bottom-[15px] xl:after:invisible xl:after:opacity-0 xl:after:transition-all xl:after:duration-[0.3s];
 }
 
 .flowbite-navbar-collapse ul > li.active::after,

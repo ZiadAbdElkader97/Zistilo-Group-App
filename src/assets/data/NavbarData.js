@@ -6,42 +6,45 @@ export const MenuData = {
   Menu: [
     {
       title: "Home",
-      link: "#home",
-    },
-    {
-      title: "About Us",
-      link: "#about",
+      link: "/#home",
     },
     {
       title: "Products/Services",
-      link: "#products",
+      link: "/#products",
+    },
+    {
+      title: "Portfolio",
+      link: "/#portfolio",
     },
     // {
-    //   title: "Blog",
-    //   link: "#blog",
+    //   title: "Team",
+    //   link: "#team",
     // },
     {
-      title: "FAQ",
-      link: "#faq",
+      title: "Blog",
+      link: "/#blog",
+    },
+    {
+      title: "E-Commerce",
+      link: "/ecommerce",
+    },
+  ],
+
+  MegaMenu: [
+    {
+      title: "About Us",
+      link: "#about",
     },
     {
       title: "Careers",
       link: "#careers",
     },
     {
-      title: "E-Commerce Section",
-      link: "#ecommerce",
+      title: "FAQs",
+      link: "#faq",
     },
-    // {
-    //   title: "Portfolio",
-    //   link: "#portfolio",
-    // },
-    // {
-    //   title: "Team",
-    //   link: "#team",
-    // },
     {
-      title: "Contact/Support",
+      title: "Contact",
       link: "#contact",
     },
   ],

@@ -4,24 +4,17 @@ import "./assets/css/animate.min.css";
 import "./assets/css/fontawesome-all.min.css";
 import "react-circular-progressbar/dist/styles.css";
 import "swiper/css";
-import { useEffect } from "react";
 import { ParallaxProvider } from "react-scroll-parallax";
+import { Routes, Route } from "react-router-dom";
+import { useEffect } from "react";
 import AnimatedCursor from "react-animated-cursor";
 import AOS from "aos";
-import ProgressScrolltop from "./components/ProgressScrolltop.jsx";
 import Preloader from "./components/Preloader.jsx";
-import Header from "./components/Header.jsx";
 import Home from "./components/Home.jsx";
-import About from "./components/About.jsx";
-import Services from "./components/Services.jsx";
-import Education from "./components/Education.jsx";
-// import Portfolio from "./components/Portfolio.jsx";
-// import Team from "./components/Team.jsx";
-import Pricing from "./components/Pricing.jsx";
-// import Video from "./components/Video.jsx";
-// import Blog from "./components/Blog.jsx";
-import Contact from "./components/Contact.jsx";
+import Navbars from "./components/Navbar.jsx";
+import Ecommerce from "./pages/Ecommerce.jsx";
 import Footer from "./components/Footer.jsx";
+import ProgressScrolltop from "./components/ProgressScrolltop.jsx";
 
 export default function App() {
   useEffect(() => {
@@ -35,17 +28,11 @@ export default function App() {
     <>
       <ParallaxProvider>
         <Preloader />
-        <Header />
-        <Home />
-        <About />
-        <Services />
-        <Education />
-        {/* <Portfolio /> */}
-        {/* <Team /> */}
-        <Pricing />
-        {/* <Video /> */}
-        {/* <Blog /> */}
-        <Contact />
+        <Navbars />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/ecommerce" element={<Ecommerce />} />
+        </Routes>
         <Footer />
         <ProgressScrolltop />
       </ParallaxProvider>
