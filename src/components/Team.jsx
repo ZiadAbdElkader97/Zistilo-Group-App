@@ -4,8 +4,10 @@ import Lightbox from "react-18-image-lightbox";
 import { Autoplay, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { TeamData } from "../assets/data/TeamData";
+import { useTranslation } from "react-i18next";
 
 const Team = () => {
+  const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const [photoIndex, setPhotoIndex] = useState(null);
 
@@ -83,7 +85,7 @@ const Team = () => {
                       {item.name}
                     </h3>
                     <h4 className="team-desig text-lg vsm:text-[18px] font-normal text-white capitalize ">
-                      {item.position}
+                      {t(item.position)}
                     </h4>
                     <ul className="team-social-wrape transition-all duration-[0.3s] invisible opacity-0 -mt-[30px] border-t-[1px] border-solid border-t-white group-hover:visible group-hover:opacity-[1] group-hover:mt-5 group-hover:pt-5">
                       {item.sociallist.map((items, i) => (

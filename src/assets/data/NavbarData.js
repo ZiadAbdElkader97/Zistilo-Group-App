@@ -6,7 +6,7 @@ export const MenuData = {
   Menu: [
     {
       title: "Home",
-      link: "/#home",
+      link: "/",
     },
     {
       title: "Products/Services",

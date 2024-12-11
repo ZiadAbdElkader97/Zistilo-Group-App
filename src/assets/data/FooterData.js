@@ -6,7 +6,7 @@ export const FooterData = {
   logo: footer_logo,
   bgimg: footer_bgimg,
   brief:
-    "But I must explain to you how all this mistaken idea of denouncing asure and praising pain was and born I will give you a",
+    "But I must explain to you how all this mistaken idea of denouncing asure and praising pain was and born I will give you",
   title: '<span class="text-[#06bbc4]">latest</span> news',
   title2: '<span class="text-[#06bbc4]">quick</span> link',
   title3: '<span class="text-[#06bbc4]">about</span> me',

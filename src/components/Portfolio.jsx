@@ -3,11 +3,13 @@ import { Link } from "react-router-dom";
 import Tilt from "react-parallax-tilt";
 import Lightbox from "react-18-image-lightbox";
 import { PortfolioData } from "../assets/data/PortfolioData";
+import { useTranslation } from "react-i18next";
 
 const Portfolio = () => {
+  const { t } = useTranslation();
   // data
   const categories = [
-    "All",
+    t("All"),
     ...new Set(PortfolioData.PortfolioList.map((item) => item.category)),
   ];
 
@@ -57,10 +59,10 @@ const Portfolio = () => {
             <div className="col-span-12">
               <div className="section-title-wrape uppercase relative mb-[60px]">
                 <h3 className="font-semibold capitalize text-[60px] sm:text-[50px] vsm:text-[40px]">
-                  {PortfolioData.title}
+                  {t(PortfolioData.title)}
                 </h3>
                 <h4 className="font-normal text-[#838694] text-2xl vsm:text-[22px] capitalize">
-                  {PortfolioData.title2}
+                  {t(PortfolioData.title2)}
                 </h4>
               </div>
               <ul className="portfolio-menu-wrape p-0 mt-0 mx-0 mb-[70px]">
@@ -72,7 +74,7 @@ const Portfolio = () => {
                       cate === activeCategory ? "active" : ""
                     }`}
                   >
-                    {cate}
+                    {t(cate)}
                   </li>
                 ))}
               </ul>
@@ -120,7 +122,8 @@ const Portfolio = () => {
             data-aos-duration="500"
           >
             <Link to={PortfolioData.btnurl} className="btn-1 uppercase">
-              {PortfolioData.btntext} <i className="fa fa-long-arrow-right"></i>
+              {t(PortfolioData.btntext)}{" "}
+              <i className="fa fa-long-arrow-right"></i>
             </Link>
           </div>
         </div>

@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import {
   CareerData,
   careerDetails,
@@ -6,23 +7,24 @@ import {
 } from "../assets/data/CareersData";
 
 export default function Careers() {
+  const { t } = useTranslation();
   return (
     <div id="careers">
-      <div className="bg-white p-4 rounded-lg py-8 mt-12">
+      <div className="bg-white p-4 rounded-lg py-8">
         <h4 className="text-4xl font-bold text-[60px] sm:text-[50px] vsm:text-[40px] tracking-widest font-Kanit text-center">
-          {CareerData.title}
+          {t(CareerData.title)}
         </h4>
         <p className="text-center text-gray-600 text-md mt-2">
-          {CareerData.title2}
+          {t(CareerData.title2)}
         </p>
         <div className="lg:max-w-3xl md:max-w-xl sm:max-w-md max-w-[700px] mx-auto border border-slate-200 bg-white rounded-2xl pt-12">
           {CareerData.positionDetails.map((item, i) => (
             <div key={i} className="flex justify-between pb-6">
               <h3 className="text-gray-900 text-xl font-medium leading-8">
-                {item.position}
+                {t(item.position)}
               </h3>
               <button className="w-20 h-9 rounded-full bg-indigo-50 hover:bg-indigo-100 transition-all duration-700 text-[#06bbc4] text-xs font-semibold leading-4">
-                {item.button}
+                {t(item.button)}
               </button>
             </div>
           ))}
@@ -30,10 +32,10 @@ export default function Careers() {
       </div>
       <div className="xl:max-w-6xl w-auto mx-auto md:py-16 py-10 xl:px-0 px-10">
         <h3 className="text-gray-900 text-center lg:text-4xl text-3xl font-bold leading-10 mb-5">
-          {CareerSection.title}
+          {t(CareerSection.title)}
         </h3>
         <p className="text-gray-500 text-center text-lg font-normal leading-7 lg:mb-14 mb-6">
-          {CareerSection.title2}
+          {t(CareerSection.title2)}
         </p>
         <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-x-4 lg:gap-x-8 gap-y-4 lg:pb-24 pb-10 border-b border-gray-200 mx-auto md:max-w-3xl lg:max-w-full">
           <div className="p-8 group hover:rounded-2xl transition-all duration-500 hover:shadow-md cursor-pointer">
@@ -53,10 +55,10 @@ export default function Careers() {
               </svg>
             </div>
             <h4 className="text-gray-900 text-lg font-semibold leading-7 mb-3 max-lg:text-center">
-              {careerDetails.title1}
+              {t(careerDetails.title1)}
             </h4>
             <p className="text-gray-500 text-sm font-normal leading-5 max-lg:text-center">
-              {careerDetails.desc}
+              {t(careerDetails.desc)}
             </p>
           </div>
 
@@ -77,10 +79,10 @@ export default function Careers() {
               </svg>
             </div>
             <h4 className="text-gray-900 text-lg font-semibold leading-7 mb-3 max-lg:text-center">
-              {careerDetails.title2}
+              {t(careerDetails.title2)}
             </h4>
             <p className="text-gray-500 text-sm font-normal leading-5 max-lg:text-center">
-              {careerDetails.desc}
+              {t(careerDetails.desc)}
             </p>
           </div>
 
@@ -101,10 +103,10 @@ export default function Careers() {
               </svg>
             </div>
             <h4 className="text-gray-900 text-lg font-semibold leading-7 mb-3 max-lg:text-center">
-              {careerDetails.title3}
+              {t(careerDetails.title3)}
             </h4>
             <p className="text-gray-500 text-sm font-normal leading-5 max-lg:text-center">
-              {careerDetails.desc}
+              {t(careerDetails.desc)}
             </p>
           </div>
         </div>
@@ -113,10 +115,10 @@ export default function Careers() {
           <div className="lg:flex items-center justify-between gap-6">
             <div className="lg:mb-0 mb-10">
               <h3 className="text-white font-manrope lg:text-4xl text-3xl font-semibold leading-10 mb-5">
-                {cvDetails.cvTitle}
+                {t(cvDetails.cvTitle)}
               </h3>
               <p className="text-indigo-100 text-xl font-normal leading-8">
-                {cvDetails.cvDesc}
+                {t(cvDetails.cvDesc)}
               </p>
             </div>
           </div>

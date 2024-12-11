@@ -2,8 +2,10 @@ import { Link } from "react-router-dom";
 import { Autoplay, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { ServicesData } from "../assets/data/ServicesData";
+import { useTranslation } from "react-i18next";
 
 const Services = () => {
+  const { t } = useTranslation();
   return (
     <>
       <div
@@ -26,10 +28,10 @@ const Services = () => {
             <div className="col-span-12">
               <div className="section-title-wrape flex flex-col items-center mb-[60px]">
                 <h3 className=" font-semibold capitalize text-[60px] sm:text-[45px] vsm:text-[34px]">
-                  {ServicesData.title}
+                  {t(ServicesData.title)}
                 </h3>
                 <h4 className="font-normal text-[#838694] max-w-[800px] mt-4 text-2xl sm:text-[20px] vsm:text-[18px] capitalize ">
-                  {ServicesData.title2}
+                  {t(ServicesData.title2)}
                 </h4>
               </div>
             </div>
@@ -70,7 +72,7 @@ const Services = () => {
                         <h3 className="text-[28px] sm:text-[23px] capitalize my-[25px] mx-0 ">
                           {item.title}
                         </h3>
-                        <p className="sm:text-[17px]">{item.brief}</p>
+                        <p className="sm:text-[17px]">{t(item.brief)}</p>
                         <div className="services-hvr absolute w-full top-0 right-0 bottom-0 left-0 -z-[1] h-full ">
                           <img
                             src={item.slidimg1}

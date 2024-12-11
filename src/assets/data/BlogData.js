@@ -81,7 +81,7 @@ export const BlogdetailsData = {
   paragraph3:
     "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod mpor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exe citation ullamco nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor",
   blockquote:
-    "industry.has been the industry's standard dummy tex ever are since the 1500s, when an unk nown printer took a galley of the type and and scrales",
+    "industry has been the industry's standard dummy tex ever are since the 1500s, when an unk nown printer took a galley of the type and scrales",
   blockquoteauthor: "Jasim Kalik",
   paragraph4:
     "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod mpor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exe citation ullamco nisi ut aliquip ex ea commodo consequat.Lorem ipsum",
@@ -106,10 +106,10 @@ export const BlogdetailsData = {
   CommentList: [
     {
       img: cmtimg1,
-      title: "proloy",
+      title: "Khaled Mahmoud",
       date: "Dec 08 2022",
       brief:
-        "industry. Lorem Ipsum has been the industry's standard dummy text ever since t he 1500s, when an unknown",
+        "industry has been the industry's standard dummy tex ever are since the 1500s, when an unk nown printer",
       replay: "replay",
       replaylink: "#",
     },
@@ -118,16 +118,16 @@ export const BlogdetailsData = {
       title: "Jasim Kalik",
       date: "Dec 08 2022",
       brief:
-        "industry. Lorem Ipsum has been the industry's standard dummy text ever since t he",
+        "industry has been the industry's standard dummy tex ever are since the 1500s, when an unk nown printer",
       replay: "replay",
       replaylink: "#",
     },
     {
       img: cmtimg1,
-      title: "proloy",
+      title: "Mohamed Ahmed",
       date: "Dec 08 2022",
       brief:
-        "industry. Lorem Ipsum has been the industry's standard dummy text ever since t he 1500s, when an unknown",
+        "industry has been the industry's standard dummy tex ever are since the 1500s, when an unk nown printer",
       replay: "replay",
       replaylink: "#",
     },

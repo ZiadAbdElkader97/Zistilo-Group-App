@@ -1,6 +1,8 @@
+import { useTranslation } from "react-i18next";
 import { ContactData } from "../assets/data/ContactData";
 
 const Contact = () => {
+  const { t } = useTranslation();
   return (
     <>
       <div className="mb-[120px]">
@@ -43,10 +45,10 @@ const Contact = () => {
                         ></span>
                       </div>
                       <div className="contant-info-content-title text-[#838694] w-[25%] ml-[12px] text-[22px] sm:text-[19px] vsm:text-[18px] capitalize font-normal">
-                        {item.title}
+                        {t(item.title)}
                       </div>
                       <div className="contant-info-content text-[22px] sm:text-[19px] vsm:text-[18px] capitalize font-normal ">
-                        {item.info}
+                        {t(item.info)}
                       </div>
                     </li>
                   ))}
@@ -71,7 +73,7 @@ const Contact = () => {
                             className="form-control transition-all duration-[0.3s] shadow-none h-[50px] text-[#777777] bg-white border-[1px] border-solid border-[#e7eaf0] py-[5px] px-5 w-full focus:shadow-[0px_10px_14px_0px_rgba(12,0,46,0.06)] focus:border-[1px] focus:border-solid focus:border-[#06bbc4] focus:w-full"
                             type="text"
                             name="name"
-                            placeholder="Name *"
+                            placeholder={t("Name *")}
                           />
                         </div>
                         <div className="xl:col-span-6 lg:col-span-6 md:col-span-6 sm:col-span-12">
@@ -79,7 +81,7 @@ const Contact = () => {
                             className="form-control transition-all duration-[0.3s] shadow-none h-[50px] text-[#777777] bg-white border-[1px] border-solid border-[#e7eaf0] py-[5px] px-5 w-full focus:shadow-[0px_10px_14px_0px_rgba(12,0,46,0.06)] focus:border-[1px] focus:border-solid focus:border-[#06bbc4] focus:w-full"
                             type="email"
                             name="email"
-                            placeholder="E-mail *"
+                            placeholder={t("E-mail *")}
                           />
                         </div>
                         <div className="xl:col-span-12 lg:col-span-12 md:col-span-12 sm:col-span-12">
@@ -87,7 +89,7 @@ const Contact = () => {
                             className="form-control transition-all duration-[0.3s] shadow-none h-[50px] text-[#777777] bg-white border-[1px] border-solid border-[#e7eaf0] py-[5px] px-5 w-full focus:shadow-[0px_10px_14px_0px_rgba(12,0,46,0.06)] focus:border-[1px] focus:border-solid focus:border-[#06bbc4] focus:w-full"
                             type="text"
                             name="subject"
-                            placeholder="Subject"
+                            placeholder={t("Subject")}
                           />
                         </div>
                         <div className="xl:col-span-12 lg:col-span-12 md:col-span-12 sm:col-span-12">
@@ -96,10 +98,10 @@ const Contact = () => {
                             name="message"
                             cols="30"
                             rows="8"
-                            placeholder="Message"
+                            placeholder={t("Message")}
                           ></textarea>
                           <button className="btn-3 uppercase">
-                            submit now
+                            {t("submit now")}
                             <span>
                               <svg
                                 data-name="Layer 1"

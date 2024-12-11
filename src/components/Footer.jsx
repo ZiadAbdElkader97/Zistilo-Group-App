@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
 import { FooterData } from "../assets/data/FooterData";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const { t } = useTranslation();
   return (
     <>
       <footer
@@ -45,7 +47,7 @@ const Footer = () => {
                 <div className="widget_recent_entries">
                   <h3
                     className=" font-medium ml-[25px] text-white capitalize text-[28px] relative mb-10 before:absolute before:content-[''] before:w-[17px] before:h-[17px] before:border before:left-[-27px] before:border-solid before:border-[#06bbc4] before:bottom-2 after:content-[''] after:absolute after:w-3 after:h-3 after:left-[-23px] after:bottom-2 after:bg-white"
-                    dangerouslySetInnerHTML={{ __html: FooterData.title }}
+                    dangerouslySetInnerHTML={{ __html: t(FooterData.title) }}
                   ></h3>
                   <ul className="m-0 p-0">
                     {FooterData.NewsList.map((item, i) => (
@@ -54,10 +56,10 @@ const Footer = () => {
                           className="text-white text-base block font-medium hover:text-[#06bbc4]"
                           to={item.link}
                         >
-                          {item.title}
+                          {t(item.title)}
                         </Link>
                         <span className="text-sm text-white font-normal block">
-                          {item.date}
+                          {t(item.date)}
                         </span>
                       </li>
                     ))}
@@ -83,7 +85,7 @@ const Footer = () => {
                           className="text-white capitalize font-semibold text-base hover:text-[#06bbc4] hover:ml-1"
                           to={item.link}
                         >
-                          {item.title}
+                          {t(item.title)}
                         </Link>
                       </li>
                     ))}
@@ -102,7 +104,9 @@ const Footer = () => {
                     className=" font-medium ml-[25px] text-white capitalize text-[28px] relative mb-10 before:absolute before:content-[''] before:w-[17px] before:h-[17px] before:border before:left-[-27px] before:border-solid before:border-[#06bbc4] before:bottom-2 after:content-[''] after:absolute after:w-3 after:h-3 after:left-[-23px] after:bottom-2 after:bg-white"
                     dangerouslySetInnerHTML={{ __html: FooterData.title3 }}
                   ></h3>
-                  <p className="text-[15px] text-white">{FooterData.brief}</p>
+                  <p className="text-[15px] text-white">
+                    {t(FooterData.brief)}
+                  </p>
                   <ul className="footer-social  mt-[25px] mb-0 mx-0 pt-[30px] pb-0 px-0 border-t-white border-t border-solid">
                     {FooterData.SocialList.map((item, i) => (
                       <li className="inline-block ml-0 mr-[25px] my-0" key={i}>

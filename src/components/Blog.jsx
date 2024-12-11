@@ -7,12 +7,14 @@ import { Link } from "react-router-dom";
 import Blogdetails from "./Blogdetails";
 import Sidebar from "./Sidebar";
 import { BlogData } from "../assets/data/BlogData";
+import { useTranslation } from "react-i18next";
 
 const Blog = () => {
+  const { t } = useTranslation();
   const [openModal, setOpenModal] = useState(false);
   return (
     <>
-      <div className="proloy-special-bg-wrape special-bg bg-center bg-cover relative bg-no-repeat -z-[1] h-[850px] bg-[#f7faff]">
+      <div className="proloy-special-bg-wrape special-bg bg-center bg-cover relative bg-no-repeat mt-[50px] -z-[1] h-[850px] bg-[#f7faff]">
         <div className="special-style absolute right-0 top-[230px] w-[400px] vsm:w-[300px]">
           <img src={BlogData.sbgimg2} alt="special-img" />
         </div>
@@ -21,7 +23,7 @@ const Blog = () => {
         <div className="container">
           <div className="grid grid-cols-12 gap-2">
             <div className="xl:col-span-6 lg:col-span-6 md:col-span-12 sm:col-span-12">
-              <div className="section-title-wrape relative mb-[75px]">
+              <div className="section-title-wrape relative mb-[130px]">
                 <Parallax
                   className="section-image absolute right-[30%] -top-[60%] sm:hidden"
                   translateX={["20px", "0px"]}
@@ -34,7 +36,7 @@ const Blog = () => {
                   data-aos-duration="400"
                   data-aos-delay="200"
                 >
-                  {BlogData.title}
+                  {t(BlogData.title)}
                 </h3>
                 <h4
                   className="font-normal text-[#838694] text-2xl sm:text-[25px] vsm:text-[20px] capitalize"
@@ -42,7 +44,7 @@ const Blog = () => {
                   data-aos-duration="600"
                   data-aos-delay="300"
                 >
-                  {BlogData.title2}
+                  {t(BlogData.title2)}
                 </h4>
               </div>
             </div>
@@ -52,7 +54,7 @@ const Blog = () => {
                 data-aos="fade-up"
                 data-aos-duration="1000"
               >
-                <p>{BlogData.brief}</p>
+                <p>{t(BlogData.brief)}</p>
               </div>
             </div>
           </div>
@@ -94,7 +96,7 @@ const Blog = () => {
                         </div>
                         <div className="blog-date-title-wrape transition-all duration-[0.3s] absolute left-[15px] right-[15px] -bottom-[90px]">
                           <div className="single-blog-date w-[50px] h-[50px] rounded-[5px] bg-white inline-flex items-center justify-center text-base font-medium text-center capitalize py-[10px] px-[5px] !leading-[18px] ">
-                            {item.postdate}
+                            {t(item.postdate)}
                           </div>
                           <div className="blog-info-title-wrape bg-white mt-5 p-5 rounded-[5px] shadow-[0px_8px_20px_0px_rgba(47,48,52,0.14)] [box-shadow:0px_8px_20px_0px_rgba(47,48,52,0.14)]">
                             <ul className="admin-info flex items-center">
@@ -104,7 +106,7 @@ const Blog = () => {
                                   to={item.authorlink}
                                 >
                                   <i className="fa fa-user mr-[7px]"></i>{" "}
-                                  {item.authorname}
+                                  {t(item.authorname)}
                                 </Link>
                               </li>
                               <li className="mr-[15px]">
@@ -113,7 +115,7 @@ const Blog = () => {
                                   to={item.commentlink}
                                 >
                                   <i className="fa fa-comment mr-[7px]"></i>{" "}
-                                  {item.commentno}
+                                  {t(item.commentno)}
                                 </Link>
                               </li>
                             </ul>
@@ -121,7 +123,7 @@ const Blog = () => {
                               className="post-title font-medium capitalize block text-[26px] !leading-[38px]"
                               onClick={() => setOpenModal(true)}
                             >
-                              {item.title}
+                              {t(item.title)}
                             </h4>
                           </div>
                         </div>
@@ -131,7 +133,7 @@ const Blog = () => {
                           className="btn-3 text-center uppercase"
                           onClick={() => setOpenModal(true)}
                         >
-                          {item.btntext}
+                          {t(item.btntext)}
                           <span>
                             <svg
                               data-name="Layer 1"
@@ -176,17 +178,17 @@ const Blog = () => {
                     <div className="xl:col-start-2 xl:col-span-11 lg:col-span-12 md:col-span-12 sm:col-span-12">
                       <div className="proloy-breadcrumb-content">
                         <h2 className=" text-white font-medium capitalize text-[70px] mb-5 ">
-                          {BlogData.Breadcrumbtitle}
+                          {t(BlogData.Breadcrumbtitle)}
                         </h2>
                         <ul className="breadcrumb flex flex-wrap p-0 m-0 bg-inherit ">
                           <li className="breadcrumb-item text-2xl uppercase font-Kanit ">
                             <Link to="/">
                               <i className="fa fa-home"></i>{" "}
-                              {BlogData.Breadcrumbhome}
+                              {t(BlogData.Breadcrumbhome)}
                             </Link>
                           </li>
                           <li className="breadcrumb-item text-2xl uppercase font-Kanit  active">
-                            {BlogData.Breadcrumbposttitle}
+                            {t(BlogData.Breadcrumbposttitle)}
                           </li>
                         </ul>
                       </div>

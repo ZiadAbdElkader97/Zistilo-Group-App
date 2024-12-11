@@ -2,8 +2,10 @@ import Tilt from "react-parallax-tilt";
 import { Parallax } from "react-scroll-parallax";
 import { Link } from "react-router-dom";
 import { HomeData } from "../assets/data/LandingData";
+import { useTranslation } from "react-i18next";
 
 const Landing = () => {
+  const { t } = useTranslation();
   return (
     <>
       <div
@@ -45,7 +47,7 @@ const Landing = () => {
                     data-aos="fade-up"
                     data-aos-delay="200"
                   >
-                    {HomeData.title1}
+                    {t(HomeData.title1)}
                   </h4>
                   <h1
                     className=" capitalize font-medium text-[100px] sm:text-[80px] vsm:text-[55px]"
@@ -58,14 +60,14 @@ const Landing = () => {
                     data-aos="fade-up"
                     data-aos-delay="400"
                   >
-                    {HomeData.title3}
+                    {t(HomeData.title3)}
                   </div>
                   <p
                     className="vsm:text-[15px]"
                     data-aos="fade-up"
                     data-aos-delay="500"
                   >
-                    {HomeData.brief}
+                    {t(HomeData.brief)}
                   </p>
                   <div className="hero-btn btn-wrape">
                     <Link
@@ -74,7 +76,7 @@ const Landing = () => {
                       to={HomeData.btnurl}
                       className="btn-1"
                     >
-                      {HomeData.btntext}{" "}
+                      {t(HomeData.btntext)}{" "}
                       <i className="fa fa-angle-double-right"></i>
                     </Link>
                     <Link
@@ -97,10 +99,10 @@ const Landing = () => {
                         data-aos-delay={item.delay}
                       >
                         <h4 className=" text-base capitalize text-[#838694] vsm:text-[16px]">
-                          {item.title}
+                          {t(item.title)}
                         </h4>
                         <h3 className=" capitalize m-0 text-[22px] vsm:text-[16px]">
-                          {item.info}
+                          {t(item.info)}
                         </h3>
                       </li>
                     </Tilt>

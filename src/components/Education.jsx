@@ -1,8 +1,10 @@
 import Tilt from "react-parallax-tilt";
 import { Link } from "react-router-dom";
 import { EducationData } from "../assets/data/EducationData";
+import { useTranslation } from "react-i18next";
 
 const Education = () => {
+  const { t } = useTranslation();
   return (
     <>
       <div className="proloy-work-education-resume-wrape py-[120px] relative">
@@ -26,7 +28,7 @@ const Education = () => {
               <div className="proloy-work-resume-wrape py-[50px] px-0 md:py-5 sm:py-5 ">
                 <div className="proloy-work-resume-heading flex items-center justify-content-center">
                   <h3 className="font-medium capitalize text-4xl vsm:text-[28px]">
-                    {EducationData.title}
+                    {t(EducationData.title)}
                   </h3>
                   <span className=" inline-block w-full relative ml-5 h-[1px] bg-[#e1e1e1] before:content-[''] before:left-0 before:absolute before:bg-[#06bbc4] before:w-[100px] before:h-[5px] before:-top-[2px] "></span>
                 </div>
@@ -63,7 +65,7 @@ const Education = () => {
               <div className="proloy-work-resume-wrape py-[50px] px-0 md:py-5 sm:py-5 ">
                 <div className="proloy-work-resume-heading flex items-center justify-content-center">
                   <h3 className="font-medium capitalize text-4xl vsm:text-[28px]">
-                    {EducationData.title2}
+                    {t(EducationData.title2)}
                   </h3>
                   <span className=" inline-block w-full relative ml-5 h-[1px] bg-[#e1e1e1] before:content-[''] before:left-0 before:absolute before:bg-[#06bbc4] before:w-[100px] before:h-[5px] before:-top-[2px] "></span>
                 </div>

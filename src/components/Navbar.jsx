@@ -3,8 +3,17 @@ import { useEffect, useState, useRef } from "react";
 import { Navbar, MegaMenu, Dropdown } from "flowbite-react";
 import { Link } from "react-router-dom";
 import { MenuData } from "../assets/data/NavbarData";
+import i18n from "../i18n";
+import { useTranslation } from "react-i18next";
 
 export default function Navbars() {
+  const { t } = useTranslation();
+
+  const changeLanguage = (event) => {
+    const selectedLanguage = event.target.value;
+    i18n.changeLanguage(selectedLanguage);
+  };
+
   //sticky menu
   const [sticky, setSticky] = useState(false);
   const stickyHeader = () => {
@@ -67,11 +76,15 @@ export default function Navbars() {
                 </div>
                 <div className="proloy-right-wrape xl:block flex order-2">
                   <div className="proloy-language-wrape xl:float-right my-[38px] mx-0 xl:pr-0 lg:pr-[70] md:pr-[70] sm:pr-[30] order-2">
-                    <select className="cursor-pointer focus:outline-none capitalize p-0">
-                      <option value="1" selected="">
+                    <select
+                      onChange={changeLanguage}
+                      defaultValue={i18n.language}
+                      className="cursor-pointer focus:outline-none capitalize p-0"
+                    >
+                      <option value="en" selected="">
                         eng
                       </option>
-                      <option value="2">ar</option>
+                      <option value="ar">ar</option>
                     </select>
                   </div>
                   <ul className="header-top-social-wrape xl:float-right my-[25px] mx-0 sm:hidden order-1 ">
@@ -94,18 +107,18 @@ export default function Navbars() {
                   <Navbar.Collapse className="2xl:inline-block xl:w-auto flowbite-navbar-collapse">
                     {MenuData.Menu.map((item, i) => (
                       <Navbar.Link key={i} href={item.link}>
-                        {item.title}
+                        {t(item.title)}
                       </Navbar.Link>
                     ))}
                     <Navbar.Link>
-                      <Dropdown label="More" inline>
+                      <Dropdown label={t("More")} inline>
                         {MenuData.MegaMenu.map((item, i) => (
                           <Dropdown.Item
                             key={i}
                             href={item.link}
                             className="bg-white w-[150px] h-auto relative right-[45px] bottom-[-32px] flex items-center justify-center"
                           >
-                            {item.title}
+                            {t(item.title)}
                           </Dropdown.Item>
                         ))}
                       </Dropdown>

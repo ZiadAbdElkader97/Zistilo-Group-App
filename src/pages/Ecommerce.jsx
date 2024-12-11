@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
 import { PricingtableData } from "../assets/data/EcommerceData";
+import { useTranslation } from "react-i18next";
 
 const Ecommerce = () => {
+  const { t } = useTranslation();
   return (
     <>
       <Link to="/ecommerce">
@@ -15,14 +17,14 @@ const Ecommerce = () => {
                   data-aos-delay="200"
                 >
                   <h3 className="font-semibold capitalize text-[60px] sm:text-[45px] vsm:text-[35px]">
-                    {PricingtableData.title}
+                    {t(PricingtableData.title)}
                   </h3>
                   <h4 className="font-normal text-[#838694] text-2xl sm:text-[xl] vsm:text-[18px] capitalize">
-                    {PricingtableData.title2}
+                    {t(PricingtableData.title2)}
                   </h4>
                 </div>
                 <p className="font-normal text-[#838694] text-center mb-[70px]">
-                  {PricingtableData.brief}
+                  {t(PricingtableData.brief)}
                 </p>
               </div>
               {PricingtableData.PricingtableList.map((item, i) => (
@@ -49,11 +51,11 @@ const Ecommerce = () => {
                           /
                         </span>
                         <span className="time font-normal text-xl">
-                          {item.time}
+                          {t(item.time)}
                         </span>
                       </h2>
                       <h4 className="font-medium capitalize text-3xl">
-                        {item.title}
+                        {t(item.title)}
                       </h4>
                     </div>
                     <ul className="price-item-list">
@@ -63,7 +65,7 @@ const Ecommerce = () => {
                           key={i}
                         >
                           <i className={`mr-[10px] ${item.icon}`}></i>{" "}
-                          {item.text}
+                          {t(item.text)}
                         </li>
                       ))}
                     </ul>
@@ -72,7 +74,7 @@ const Ecommerce = () => {
                         className="btn-3 text-center uppercase magic-hover magic-hover__square"
                         to={item.btnlink}
                       >
-                        {item.btntext}
+                        {t(item.btntext)}
                         <span>
                           <svg
                             data-name="Layer 1"

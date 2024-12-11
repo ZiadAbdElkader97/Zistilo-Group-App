@@ -3,8 +3,10 @@ import { CircularProgressbar } from "react-circular-progressbar";
 import { Parallax } from "react-scroll-parallax";
 import VisibilitySensor from "react-visibility-sensor";
 import { AboutData } from "../assets/data/AboutData";
+import { useTranslation } from "react-i18next";
 
 const About = () => {
+  const { t } = useTranslation();
   return (
     <>
       <div id="about" className="proloy-about-area-wrape py-[100px]">
@@ -24,7 +26,7 @@ const About = () => {
                   data-aos-duration="400"
                   data-aos-delay="200"
                 >
-                  {AboutData.title}
+                  {t(AboutData.title)}
                 </h3>
                 <h4
                   className=" font-normal text-[#838694] text-2xl capitalize vsm:text-xl"
@@ -32,7 +34,7 @@ const About = () => {
                   data-aos-duration="600"
                   data-aos-delay="300"
                 >
-                  {AboutData.title2}
+                  {t(AboutData.title2)}
                 </h4>
               </div>
               <ul className="social-wrape">
@@ -60,7 +62,7 @@ const About = () => {
                 data-aos="fade-up"
                 data-aos-duration="1000"
               >
-                <p>{AboutData.brief}</p>
+                <p>{t(AboutData.brief)}</p>
                 <div className="about-sign mt-[10px]">
                   <img src={AboutData.img1} alt="about-sign" />
                 </div>
@@ -89,7 +91,7 @@ const About = () => {
                       {item.title}
                     </div>
                     <div className="about-resume-info text-2xl vsm:text-[16px] sm:text-[20px] capitalize vsm:w-[60%]">
-                      {item.info}
+                      {t(item.info)}
                     </div>
                   </li>
                 ))}
@@ -122,7 +124,7 @@ const About = () => {
                       <h3 className=" text-3xl capitalize font-medium ">
                         {item.title}
                       </h3>
-                      <p>{item.brief}</p>
+                      <p>{t(item.brief)}</p>
                     </div>
                   </div>
                 ))}
